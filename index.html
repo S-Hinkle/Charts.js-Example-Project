@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet Connection</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+    <div class="container is-max-desktop">
+        <div class="wallet-container box">
+            <!-- Header, Title, and Wallet Button -->
+            <div class="header-container">
+                <div class="logo-title-container">
+                    <img src="project_logo_v2.png" alt="Logo">
+                    <h2 class="title">Dapper Analytics</h2>
+                </div>
+                <button class="button is-link">Connect Wallet</button>
+            </div>
+        
+            <div class="wallet-buttons columns is-multiline">
+                <!-- Bitcoin Button -->
+                <div class="column is-one-quarter">
+                    <button class="button is-fullwidth wallet-btn">
+                        <img src="bitcoin.webp" alt="Bitcoin">
+                        Bitcoin
+                    </button>
+                </div>
+                <!-- Etherium Button -->
+                <div class="column is-one-quarter">
+                    <button class="button is-fullwidth wallet-btn">
+                        <img src="ethereum.webp" alt="Etherium">
+                        Ethereum
+                    </button>
+                </div>
+                <!-- Tether Button -->
+                <div class="column is-one-quarter">
+                    <button class="button is-fullwidth wallet-btn">
+                        <img src="Tether.webp" alt="Tether">
+                        Tether
+                    </button>
+                </div>
+                <!-- BNB Button -->
+                <div class="column is-one-quarter">
+                    <button class="button is-fullwidth wallet-btn">
+                        <img src="bnb-icon2_2x.webp" alt="Bnb">
+                        binancecoin
+                    </button>
+                </div>
+                <!-- End of Coin Buttons -->
+            </div>
+
+            <!-- Coin Details -->
+            <div class="details-container">
+                <div class="details-row">
+                    <div class="details-data-1"></div>
+                    <div class="details-data-2"></div>
+                    <!-- Third Div with text and two sub divs -->
+                    <div class="details-data-3">
+                        <p>Sentiment</p>
+                        <!-- Sub Divs on the same line -->
+                        <div class="sub-divs">
+                            <div class="sub-div-1">&#x1F600;</div>
+                            <div class="sub-div-2">&#x1F61E;</div>
+                        </div>
+                    </div>
+                </div>
+                <canvas id="cryptoChart"></canvas>
+                <button class="button is-link back-btn">Back</button>
+            </div>
+            
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="main.js"></script>
+    </body>
+    </html>
